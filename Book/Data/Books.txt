@@ -1,0 +1,17 @@
+Cost	Year
+89	Junior
+99	Junior
+119	Junior
+139	Junior
+189	Junior
+199	Junior
+229	Junior
+109	Senior
+159	Senior
+179	Senior
+209	Senior
+219	Senior
+259	Senior
+279	Senior
+299	Senior
+309	Senior
