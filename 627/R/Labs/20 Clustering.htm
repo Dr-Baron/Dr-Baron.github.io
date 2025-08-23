@@ -1,0 +1,3051 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 15">
+<meta name=Originator content="Microsoft Word 15">
+<link rel=File-List href="20%20Clustering_files/filelist.xml">
+<link rel=Edit-Time-Data href="20%20Clustering_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Michael Baron</o:Author>
+  <o:LastAuthor>Michael Baron</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>257</o:TotalTime>
+  <o:LastPrinted>2016-02-29T19:31:00Z</o:LastPrinted>
+  <o:Created>2024-08-01T16:13:00Z</o:Created>
+  <o:LastSaved>2024-08-01T16:13:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>2001</o:Words>
+  <o:Characters>10651</o:Characters>
+  <o:Company>American University</o:Company>
+  <o:Lines>409</o:Lines>
+  <o:Paragraphs>287</o:Paragraphs>
+  <o:CharactersWithSpaces>12365</o:CharactersWithSpaces>
+  <o:Version>16.00</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<link rel=themeData href="20%20Clustering_files/themedata.thmx">
+<link rel=colorSchemeMapping href="20%20Clustering_files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:UseWord2010TableStyleRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:EnableOpenTypeKerning/>
+   <w:DontFlipMirrorIndents/>
+   <w:OverrideTableStyleHps/>
+  </w:Compatibility>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="376">
+  <w:LsdException Locked="false" Priority="0" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 9"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="header"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footer"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index heading"/>
+  <w:LsdException Locked="false" Priority="35" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of figures"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope return"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="line number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="page number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of authorities"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="macro"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toa heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 5"/>
+  <w:LsdException Locked="false" Priority="10" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Closing"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Signature"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Message Header"/>
+  <w:LsdException Locked="false" Priority="11" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Salutation"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Date"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Note Heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Block Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="FollowedHyperlink"/>
+  <w:LsdException Locked="false" Priority="22" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Document Map"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Plain Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="E-mail Signature"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Top of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Bottom of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal (Web)"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Acronym"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Cite"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Code"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Definition"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Keyboard"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Preformatted"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Sample"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Typewriter"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Variable"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Table"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation subject"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="No List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Contemporary"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Elegant"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Professional"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Balloon Text"/>
+  <w:LsdException Locked="false" Priority="39" Name="Table Grid"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Theme"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+  <w:LsdException Locked="false" Priority="41" Name="Plain Table 1"/>
+  <w:LsdException Locked="false" Priority="42" Name="Plain Table 2"/>
+  <w:LsdException Locked="false" Priority="43" Name="Plain Table 3"/>
+  <w:LsdException Locked="false" Priority="44" Name="Plain Table 4"/>
+  <w:LsdException Locked="false" Priority="45" Name="Plain Table 5"/>
+  <w:LsdException Locked="false" Priority="40" Name="Grid Table Light"/>
+  <w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="46" Name="List Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Mention"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Smart Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hashtag"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Unresolved Mention"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Smart Link"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536869121 1107305727 33554432 0 415 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-469750017 -1073732485 9 0 511 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-520081665 -1073717157 41 0 66047 0;}
+@font-face
+	{font-family:CSongGB18030C-LightHWL;
+	panose-1:2 10 3 4 0 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-2147482945 953122042 22 0 262145 0;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-536869121 64767 1 0 415 0;}
+@font-face
+	{font-family:Elephant;
+	panose-1:2 2 9 4 9 5 5 2 3 3;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:"Lucida Console";
+	panose-1:2 11 6 9 4 5 4 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-2147482993 6144 0 0 31 0;}
+@font-face
+	{font-family:"Arial Narrow";
+	panose-1:2 11 6 6 2 2 2 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:647 2048 0 0 159 0;}
+@font-face
+	{font-family:"\@CSongGB18030C-LightHWL";
+	mso-font-charset:134;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-2147482945 953122042 22 0 262145 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Balloon Text Char";
+	margin:0in;
+	mso-pagination:widow-orphan;
+	font-size:8.0pt;
+	font-family:"Tahoma",sans-serif;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;}
+span.MsoPlaceholderText
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	color:gray;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:.5in;
+	mso-add-space:auto;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	mso-add-space:auto;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	mso-add-space:auto;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:.5in;
+	mso-add-space:auto;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Balloon Text";
+	mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;
+	font-family:"Tahoma",sans-serif;
+	mso-ascii-font-family:Tahoma;
+	mso-hansi-font-family:Tahoma;
+	mso-bidi-font-family:Tahoma;}
+span.apple-converted-space
+	{mso-style-name:apple-converted-space;
+	mso-style-unhide:no;}
+span.grame
+	{mso-style-name:grame;
+	mso-style-unhide:no;}
+span.spelle
+	{mso-style-name:spelle;
+	mso-style-unhide:no;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-font-kerning:0pt;
+	mso-ligatures:none;}
+.MsoPapDefault
+	{mso-style-type:export-only;
+	margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:.5in .5in .5in .5in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:166017745;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1246926650 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l0:level1
+	{mso-level-start-at:0;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l0:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l0:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l1
+	{mso-list-id:464084917;
+	mso-list-type:hybrid;
+	mso-list-template-ids:671924970 18137060 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l1:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;}
+@list l1:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;}
+@list l1:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:1.75in;
+	text-indent:-9.0pt;}
+@list l1:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;}
+@list l1:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:2.75in;
+	text-indent:-.25in;}
+@list l1:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:3.25in;
+	text-indent:-9.0pt;}
+@list l1:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:3.75in;
+	text-indent:-.25in;}
+@list l1:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:4.25in;
+	text-indent:-.25in;}
+@list l1:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:4.75in;
+	text-indent:-9.0pt;}
+@list l2
+	{mso-list-id:527646248;
+	mso-list-type:hybrid;
+	mso-list-template-ids:464714318 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l2:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l2:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l2:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l3
+	{mso-list-id:684745587;
+	mso-list-type:hybrid;
+	mso-list-template-ids:464714318 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l3:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l3:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l3:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l4
+	{mso-list-id:939685458;
+	mso-list-type:hybrid;
+	mso-list-template-ids:464714318 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l4:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l4:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l4:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l5
+	{mso-list-id:981732541;
+	mso-list-type:hybrid;
+	mso-list-template-ids:671924970 18137060 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l5:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:63.0pt;
+	text-indent:-.25in;}
+@list l5:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:99.0pt;
+	text-indent:-.25in;}
+@list l5:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:135.0pt;
+	text-indent:-9.0pt;}
+@list l5:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:171.0pt;
+	text-indent:-.25in;}
+@list l5:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:207.0pt;
+	text-indent:-.25in;}
+@list l5:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:243.0pt;
+	text-indent:-9.0pt;}
+@list l5:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:279.0pt;
+	text-indent:-.25in;}
+@list l5:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:315.0pt;
+	text-indent:-.25in;}
+@list l5:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:351.0pt;
+	text-indent:-9.0pt;}
+@list l6
+	{mso-list-id:1216161830;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-447598760 -1456544958 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l6:level1
+	{mso-level-text:%1;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:66.0pt;
+	text-indent:-.25in;}
+@list l6:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:102.0pt;
+	text-indent:-.25in;}
+@list l6:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:138.0pt;
+	text-indent:-9.0pt;}
+@list l6:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:174.0pt;
+	text-indent:-.25in;}
+@list l6:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:210.0pt;
+	text-indent:-.25in;}
+@list l6:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:246.0pt;
+	text-indent:-9.0pt;}
+@list l6:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:282.0pt;
+	text-indent:-.25in;}
+@list l6:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:318.0pt;
+	text-indent:-.25in;}
+@list l6:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:354.0pt;
+	text-indent:-9.0pt;}
+@list l7
+	{mso-list-id:1220558137;
+	mso-list-type:hybrid;
+	mso-list-template-ids:671924970 18137060 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l7:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;}
+@list l7:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;}
+@list l7:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:1.75in;
+	text-indent:-9.0pt;}
+@list l7:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;}
+@list l7:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:2.75in;
+	text-indent:-.25in;}
+@list l7:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:3.25in;
+	text-indent:-9.0pt;}
+@list l7:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:3.75in;
+	text-indent:-.25in;}
+@list l7:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:4.25in;
+	text-indent:-.25in;}
+@list l7:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:4.75in;
+	text-indent:-9.0pt;}
+@list l8
+	{mso-list-id:1487749258;
+	mso-list-type:hybrid;
+	mso-list-template-ids:464714318 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l8:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l8:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l8:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l8:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l8:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l8:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l8:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l8:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l8:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l9
+	{mso-list-id:1505438698;
+	mso-list-type:hybrid;
+	mso-list-template-ids:464714318 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l9:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:40.5pt;
+	text-indent:-.25in;}
+@list l9:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:76.5pt;
+	text-indent:-.25in;}
+@list l9:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:112.5pt;
+	text-indent:-9.0pt;}
+@list l9:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:148.5pt;
+	text-indent:-.25in;}
+@list l9:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:184.5pt;
+	text-indent:-.25in;}
+@list l9:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:220.5pt;
+	text-indent:-9.0pt;}
+@list l9:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:256.5pt;
+	text-indent:-.25in;}
+@list l9:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:292.5pt;
+	text-indent:-.25in;}
+@list l9:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:328.5pt;
+	text-indent:-9.0pt;}
+@list l10
+	{mso-list-id:1635678648;
+	mso-list-type:hybrid;
+	mso-list-template-ids:464714318 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l10:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l10:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l10:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l10:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l10:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l10:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l10:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l10:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l10:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin-top:0in;
+	mso-para-margin-right:0in;
+	mso-para-margin-bottom:8.0pt;
+	mso-para-margin-left:0in;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+table.MsoTableGrid
+	{mso-style-name:"Table Grid";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-priority:39;
+	mso-style-unhide:no;
+	border:solid windowtext 1.0pt;
+	mso-border-alt:solid windowtext .5pt;
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-border-insideh:.5pt solid windowtext;
+	mso-border-insidev:.5pt solid windowtext;
+	mso-para-margin:0in;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in;word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal align=right style='text-align:right'><i><u><span
+style='font-size:14.0pt;mso-bidi-font-size:11.0pt;line-height:107%;mso-fareast-font-family:
+CSongGB18030C-LightHWL;mso-bidi-font-family:Consolas;mso-bidi-font-weight:bold'>#
+Dr. M. Baron, Statistical Machine Learning class, STAT-427/627<o:p></o:p></span></u></i></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><u><span
+style='font-size:18.0pt;mso-bidi-font-size:14.0pt;line-height:107%;font-family:
+"Elephant",serif;mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:
+Consolas'># CLUSTERING<o:p></o:p></span></u></b></p>
+
+<p class=MsoListParagraph style='margin-bottom:0in;mso-add-space:auto;
+text-indent:-.25in;line-height:normal;mso-list:l0 level1 lfo8'><![if !supportLists]><b
+style='mso-bidi-font-weight:normal'><span style='font-size:14.0pt;mso-bidi-font-size:
+11.0pt;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;color:red'><span
+style='mso-list:Ignore'>0.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span></b><![endif]><b style='mso-bidi-font-weight:normal'><u><span
+style='font-size:14.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas;color:red'>Review of principal components –
+another unsupervised learning method<o:p></o:p></span></u></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:14.0pt;mso-bidi-font-size:
+11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:
+Consolas'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'>&gt; attach(<span class=SpellE>USArrests</span>)<span
+style='mso-tab-count:1'>      </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:
+Consolas'>This data set contains statistics, in arrests per 100,000 residents
+for assault, murder, and rape in each of the 50 US states in 1973. Also given
+is the <span class=GramE>percent</span> of the population living in urban
+areas.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'>&gt; names(<span class=SpellE>USArrests</span>)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'>[1] &quot;Murder&quot;<span
+style='mso-spacerun:yes'>   </span>&quot;Assault&quot;<span
+style='mso-spacerun:yes'>  </span>&quot;<span class=SpellE>UrbanPop</span>&quot;
+&quot;Rape&quot;<span style='mso-spacerun:yes'>    </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:
+Consolas'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'>&gt; pc = <span class=SpellE><span
+style='background:yellow;mso-highlight:yellow'>prcomp</span></span>(<span
+class=SpellE>USArrests</span>, <span style='background:yellow;mso-highlight:
+yellow'>scale=TRUE</span>)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'>&gt; <span style='background:yellow;mso-highlight:
+yellow'>biplot</span>(pc)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:14.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="Picture_x0020_4" o:spid="_x0000_i1031" type="#_x0000_t75"
+ style='width:406.5pt;height:404pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="20%20Clustering_files/image001.png" o:title="" croptop="3714f"
+  cropbottom="2108f" cropleft="7556f" cropright="7216f"/>
+</v:shape><![endif]--><![if !vml]><img width=542 height=539
+src="20%20Clustering_files/image002.jpg" v:shapes="Picture_x0020_4"><![endif]></span><span
+style='font-size:14.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:14.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:
+Consolas'>Red vectors are projections of the original X-variables on the space
+of the first two principal components. We can see that the first principal
+component Z<sub>1</sub> mostly represents the combined crime rate, and the
+second principal component Z<sub>2</sub> mostly represents the level of
+urbanization.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b
+style='mso-bidi-font-weight:normal'><u><span style='font-size:20.0pt;
+mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><o:p><span style='text-decoration:none'>&nbsp;</span></o:p></span></u></b></p>
+
+<p class=MsoListParagraph style='margin-top:0in;margin-right:0in;margin-bottom:
+0in;margin-left:.75in;mso-add-space:auto;text-indent:-.25in;line-height:normal;
+mso-list:l1 level1 lfo9'><![if !supportLists]><b style='mso-bidi-font-weight:
+normal'><span style='font-size:14.0pt;mso-bidi-font-size:11.0pt;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin;color:red'><span style='mso-list:Ignore'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></b><![endif]><b
+style='mso-bidi-font-weight:normal'><u><span style='font-size:14.0pt;
+mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas;color:red'>K-means method<o:p></o:p></span></u></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:14.0pt;mso-bidi-font-size:
+11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:
+Consolas'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:
+Consolas'>Now we use K-means clustering to find more homogeneous groups among
+the states.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:
+Consolas'>Let’s start with K=2 clusters. The 50 states are partitioned into 2
+groups, Cluster 1 with 21 and Cluster 2 with 29 states.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:
+Consolas'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'>&gt; KM2 = <span class=SpellE><span
+style='background:yellow;mso-highlight:yellow'>kmeans</span></span>(X,2)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'>&gt; KM2<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'>K-means clustering with 2 clusters of sizes 21,
+29<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'>Cluster means:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><span style='mso-spacerun:yes'>    
+</span>Murder<span style='mso-spacerun:yes'>  </span>Assault <span
+class=SpellE>UrbanPop</span><span style='mso-spacerun:yes'>     </span>Rape<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'>1 11.857143 255.0000 67.61905 28.11429<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'>2<span style='mso-spacerun:yes'> 
+</span>4.841379 109.7586 64.03448 16.24828<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'>Clustering vector:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><span style='mso-spacerun:yes'>      
+</span>Alabama<span style='mso-spacerun:yes'>         </span>Alaska<span
+style='mso-spacerun:yes'>        </span>Arizona<span
+style='mso-spacerun:yes'>       </span>Arkansas<span
+style='mso-spacerun:yes'>     </span>California <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><span style='mso-spacerun:yes'>            
+</span>1<span style='mso-spacerun:yes'>              </span>1<span
+style='mso-spacerun:yes'>              </span>1<span
+style='mso-spacerun:yes'>              </span>1<span
+style='mso-spacerun:yes'>              </span>1 <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><span style='mso-spacerun:yes'>     
+</span>Colorado<span style='mso-spacerun:yes'>    </span>Connecticut<span
+style='mso-spacerun:yes'>       </span>Delaware<span
+style='mso-spacerun:yes'>        </span>Florida<span
+style='mso-spacerun:yes'>        </span>Georgia <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><span style='mso-spacerun:yes'>            
+</span>1<span style='mso-spacerun:yes'>              </span>2<span
+style='mso-spacerun:yes'>              </span>1<span
+style='mso-spacerun:yes'>              </span>1<span
+style='mso-spacerun:yes'>              </span>1 <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><span style='mso-spacerun:yes'>       
+</span>Hawaii<span style='mso-spacerun:yes'>          </span>Idaho<span
+style='mso-spacerun:yes'>       </span>Illinois<span
+style='mso-spacerun:yes'>        </span>Indiana<span
+style='mso-spacerun:yes'>           </span>Iowa <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><span style='mso-spacerun:yes'>            
+</span>2<span style='mso-spacerun:yes'>              </span>2<span
+style='mso-spacerun:yes'>              </span>1<span
+style='mso-spacerun:yes'>              </span>2<span
+style='mso-spacerun:yes'>              </span>2 <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><span style='mso-spacerun:yes'>       
+</span>Kansas<span style='mso-spacerun:yes'>       </span>Kentucky<span
+style='mso-spacerun:yes'>      </span>Louisiana<span
+style='mso-spacerun:yes'>          </span>Maine<span
+style='mso-spacerun:yes'>       </span>Maryland <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><span style='mso-spacerun:yes'>            
+</span>2<span style='mso-spacerun:yes'>              </span>2<span
+style='mso-spacerun:yes'>              </span>1<span
+style='mso-spacerun:yes'>              </span>2<span
+style='mso-spacerun:yes'>              </span>1 <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><span
+style='mso-spacerun:yes'> </span>Massachusetts<span
+style='mso-spacerun:yes'>       </span>Michigan<span
+style='mso-spacerun:yes'>      </span>Minnesota<span
+style='mso-spacerun:yes'>    </span>Mississippi<span
+style='mso-spacerun:yes'>       </span>Missouri <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><span style='mso-spacerun:yes'>            
+</span>2<span style='mso-spacerun:yes'>              </span>1<span
+style='mso-spacerun:yes'>              </span>2<span
+style='mso-spacerun:yes'>              </span>1<span
+style='mso-spacerun:yes'>              </span>2 <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><span style='mso-spacerun:yes'>      
+</span>Montana<span style='mso-spacerun:yes'>       </span>Nebraska<span
+style='mso-spacerun:yes'>         </span>Nevada<span style='mso-spacerun:yes'> 
+</span>New Hampshire<span style='mso-spacerun:yes'>     </span>New Jersey <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><span style='mso-spacerun:yes'>            
+</span>2<span style='mso-spacerun:yes'>              </span>2<span
+style='mso-spacerun:yes'>              </span>1<span
+style='mso-spacerun:yes'>              </span>2<span
+style='mso-spacerun:yes'>              </span>2 <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><span style='mso-spacerun:yes'>    </span>New
+Mexico<span style='mso-spacerun:yes'>       </span>New York North Carolina<span
+style='mso-spacerun:yes'>   </span>North Dakota<span
+style='mso-spacerun:yes'>           </span>Ohio <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><span style='mso-spacerun:yes'>            
+</span>1<span style='mso-spacerun:yes'>              </span>1<span
+style='mso-spacerun:yes'>              </span>1<span
+style='mso-spacerun:yes'>              </span>2<span
+style='mso-spacerun:yes'>              </span>2 <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><span style='mso-spacerun:yes'>     
+</span>Oklahoma<span style='mso-spacerun:yes'>         </span>Oregon<span
+style='mso-spacerun:yes'>   </span>Pennsylvania<span
+style='mso-spacerun:yes'>   </span>Rhode Island South Carolina <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><span style='mso-spacerun:yes'>            
+</span>2<span style='mso-spacerun:yes'>              </span>2<span
+style='mso-spacerun:yes'>              </span>2<span
+style='mso-spacerun:yes'>              </span>2<span
+style='mso-spacerun:yes'>              </span>1 <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><span style='mso-spacerun:yes'>  </span>South
+Dakota<span style='mso-spacerun:yes'>      </span>Tennessee<span
+style='mso-spacerun:yes'>          </span>Texas<span
+style='mso-spacerun:yes'>           </span>Utah<span
+style='mso-spacerun:yes'>        </span>Vermont <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><span style='mso-spacerun:yes'>            
+</span>2<span style='mso-spacerun:yes'>              </span>1<span
+style='mso-spacerun:yes'>              </span>1<span
+style='mso-spacerun:yes'>              </span>2<span
+style='mso-spacerun:yes'>              </span>2 <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><span style='mso-spacerun:yes'>     
+</span>Virginia<span style='mso-spacerun:yes'>     </span>Washington<span
+style='mso-spacerun:yes'>  </span>West Virginia<span
+style='mso-spacerun:yes'>      </span>Wisconsin<span
+style='mso-spacerun:yes'>        </span>Wyoming <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><span style='mso-spacerun:yes'>            
+</span>2<span style='mso-spacerun:yes'>              </span>2<span
+style='mso-spacerun:yes'>              </span>2<span
+style='mso-spacerun:yes'>              </span>2<span
+style='mso-spacerun:yes'>              </span>2 <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'>Within cluster sum of squares by cluster:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'>[1] 41636.73 54762.30<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><span style='mso-spacerun:yes'> </span>(<span
+class=SpellE>between_SS</span> / <span class=SpellE>total_SS</span> =<span
+style='mso-spacerun:yes'>  </span>72.9 %)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:
+Consolas'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:
+Consolas'>Let’s look at the position of these clusters on our biplot. There is
+a discrepancy of scales in biplot, so I am using a coefficient 3.5, to match
+points to state names.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:
+Consolas'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'>&gt; points(3.5*<span class=SpellE>pc$x</span>[,1],
+3.5*<span class=SpellE>pc$x</span>[,2], col=KM2$cluster, <span class=SpellE>lwd</span>=5)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_2"
+ o:spid="_x0000_i1030" type="#_x0000_t75" style='width:332pt;height:303pt;
+ visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="20%20Clustering_files/image003.png" o:title="" croptop="3707f"
+  cropbottom="1927f"/>
+</v:shape><![endif]--><![if !vml]><img width=443 height=404
+src="20%20Clustering_files/image004.jpg" v:shapes="Picture_x0020_2"><![endif]></span><span
+style='font-size:12.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:
+Consolas'>Use more clusters?<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:
+Consolas'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:14.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'>&gt; KM5 = <span class=SpellE>kmeans</span>(X,5)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:14.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'>&gt; points(3.5*<span class=SpellE>pc$x</span>[,1],
+3.5*<span class=SpellE>pc$x</span>[,2], col=KM5$cluster, <span class=SpellE>lwd</span>=5)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:14.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_3"
+ o:spid="_x0000_i1029" type="#_x0000_t75" style='width:340.5pt;height:318.5pt;
+ visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="20%20Clustering_files/image005.png" o:title="" croptop="3039f"
+  cropbottom="1012f" cropright="-47f"/>
+</v:shape><![endif]--><![if !vml]><img width=454 height=425
+src="20%20Clustering_files/image006.jpg" v:shapes="Picture_x0020_3"><![endif]></span><span
+style='font-size:14.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><o:p></o:p></span></p>
+
+<p class=MsoListParagraph style='margin-top:0in;margin-right:0in;margin-bottom:
+0in;margin-left:.75in;mso-add-space:auto;text-indent:-.25in;line-height:normal;
+mso-list:l1 level1 lfo9'><![if !supportLists]><b style='mso-bidi-font-weight:
+normal'><span style='font-size:14.0pt;mso-bidi-font-size:11.0pt;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin;color:red'><span style='mso-list:Ignore'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></b><![endif]><b
+style='mso-bidi-font-weight:normal'><u><span style='font-size:14.0pt;
+mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas;color:red'>Hierarchical Clustering and Dendrogram<o:p></o:p></span></u></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:14.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:
+Consolas'>So, how many clusters should be used? We can apply the hierarchical
+clustering algorithm, which does not <span class=GramE>require to</span>
+pre-specify the number of clusters.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:
+Consolas'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'>&gt; HC = <span class=SpellE><span
+style='background:yellow;mso-highlight:yellow'>hclust</span></span><span
+style='background:yellow;mso-highlight:yellow'>( <span class=SpellE>dist</span>(X),
+method=&quot;complete&quot; )</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:
+Consolas'>Here, “<span class=SpellE>dist</span>” stays for distance between
+multivariate observations, and method can be “complete”, “single”, “average”,
+“median”, etc. – it is a method of determining similarity with clusters and
+dissimilarity between clusters.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:
+Consolas'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:
+Consolas'>We can see the <i style='mso-bidi-font-style:normal'>dendrogram </i>that
+this method has created.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:
+Consolas'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'>&gt; plot(HC)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_5"
+ o:spid="_x0000_i1028" type="#_x0000_t75" style='width:554pt;height:206.5pt;
+ visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="20%20Clustering_files/image007.png" o:title="" croptop="2514f"
+  cropbottom="9666f"/>
+</v:shape><![endif]--><![if !vml]><img width=739 height=275
+src="20%20Clustering_files/image008.jpg" v:shapes="Picture_x0020_5"><![endif]></span><span
+style='font-size:12.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><o:p></o:p></span></p>
+
+<p class=MsoListParagraph style='margin-top:0in;margin-right:0in;margin-bottom:
+0in;margin-left:.75in;mso-add-space:auto;line-height:normal'><b
+style='mso-bidi-font-weight:normal'><u><span style='font-size:14.0pt;
+mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas;color:red'><o:p><span style='text-decoration:
+ none'>&nbsp;</span></o:p></span></u></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:
+Consolas'>We then cut the tree at some level and create clusters. <o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:
+Consolas'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'>&gt; <span class=SpellE><span style='background:
+yellow;mso-highlight:yellow'>cutree</span></span>(HC,5)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:9.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><span style='mso-spacerun:yes'>      
+</span>Alabama<span style='mso-spacerun:yes'>         </span>Alaska<span
+style='mso-spacerun:yes'>        </span>Arizona<span
+style='mso-spacerun:yes'>       </span>Arkansas<span
+style='mso-spacerun:yes'>     </span>California <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:9.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><span style='mso-spacerun:yes'>            
+</span>1<span style='mso-spacerun:yes'>              </span>1<span
+style='mso-spacerun:yes'>              </span>1<span
+style='mso-spacerun:yes'>              </span>2<span
+style='mso-spacerun:yes'>              </span>1 <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:9.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><span style='mso-spacerun:yes'>     
+</span>Colorado<span style='mso-spacerun:yes'>    </span>Connecticut<span
+style='mso-spacerun:yes'>       </span>Delaware<span
+style='mso-spacerun:yes'>        </span>Florida<span
+style='mso-spacerun:yes'>        </span>Georgia <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:9.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><span style='mso-spacerun:yes'>            
+</span>2<span style='mso-spacerun:yes'>              </span>3<span
+style='mso-spacerun:yes'>              </span>1<span
+style='mso-spacerun:yes'>              </span>4<span
+style='mso-spacerun:yes'>              </span>2 <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:9.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><span style='mso-spacerun:yes'>       
+</span>Hawaii<span style='mso-spacerun:yes'>          </span>Idaho<span
+style='mso-spacerun:yes'>       </span>Illinois<span
+style='mso-spacerun:yes'>        </span>Indiana<span
+style='mso-spacerun:yes'>           </span>Iowa <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:9.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><span style='mso-spacerun:yes'>            
+</span>5<span style='mso-spacerun:yes'>              </span>3<span
+style='mso-spacerun:yes'>              </span>1<span
+style='mso-spacerun:yes'>              </span>3<span
+style='mso-spacerun:yes'>              </span>5 <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:9.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><span style='mso-spacerun:yes'>       
+</span>Kansas<span style='mso-spacerun:yes'>       </span>Kentucky<span
+style='mso-spacerun:yes'>      </span>Louisiana<span
+style='mso-spacerun:yes'>          </span>Maine<span
+style='mso-spacerun:yes'>       </span>Maryland <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:9.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><span style='mso-spacerun:yes'>            
+</span>3<span style='mso-spacerun:yes'>              </span>3<span
+style='mso-spacerun:yes'>              </span>1<span
+style='mso-spacerun:yes'>              </span>5<span
+style='mso-spacerun:yes'>              </span>1 <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:9.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><span
+style='mso-spacerun:yes'> </span>Massachusetts<span
+style='mso-spacerun:yes'>       </span>Michigan<span
+style='mso-spacerun:yes'>      </span>Minnesota<span
+style='mso-spacerun:yes'>    </span>Mississippi<span
+style='mso-spacerun:yes'>       </span>Missouri <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:9.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><span style='mso-spacerun:yes'>            
+</span>2<span style='mso-spacerun:yes'>              </span>1<span
+style='mso-spacerun:yes'>              </span>5<span
+style='mso-spacerun:yes'>              </span>1<span
+style='mso-spacerun:yes'>              </span>2 <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:9.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><span style='mso-spacerun:yes'>      
+</span>Montana<span style='mso-spacerun:yes'>       </span>Nebraska<span
+style='mso-spacerun:yes'>         </span>Nevada<span style='mso-spacerun:yes'> 
+</span>New Hampshire<span style='mso-spacerun:yes'>     </span>New Jersey <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:9.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><span style='mso-spacerun:yes'>            
+</span>3<span style='mso-spacerun:yes'>              </span>3<span
+style='mso-spacerun:yes'>              </span>1<span
+style='mso-spacerun:yes'>              </span>5<span
+style='mso-spacerun:yes'>              </span>2 <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:9.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><span style='mso-spacerun:yes'>    </span>New
+Mexico<span style='mso-spacerun:yes'>       </span>New York North Carolina<span
+style='mso-spacerun:yes'>   </span>North Dakota<span
+style='mso-spacerun:yes'>           </span>Ohio <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:9.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><span style='mso-spacerun:yes'>            
+</span>1<span style='mso-spacerun:yes'>              </span>1<span
+style='mso-spacerun:yes'>              </span>4<span
+style='mso-spacerun:yes'>              </span>5<span
+style='mso-spacerun:yes'>              </span>3 <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:9.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><span style='mso-spacerun:yes'>     
+</span>Oklahoma<span style='mso-spacerun:yes'>         </span>Oregon<span
+style='mso-spacerun:yes'>   </span>Pennsylvania<span
+style='mso-spacerun:yes'>   </span>Rhode Island South Carolina <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:9.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><span style='mso-spacerun:yes'>            
+</span>2<span style='mso-spacerun:yes'>              </span>2<span
+style='mso-spacerun:yes'>              </span>3<span
+style='mso-spacerun:yes'>              </span>2<span
+style='mso-spacerun:yes'>              </span>1 <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:9.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><span style='mso-spacerun:yes'>  </span>South
+Dakota<span style='mso-spacerun:yes'>      </span>Tennessee<span
+style='mso-spacerun:yes'>          </span>Texas<span
+style='mso-spacerun:yes'>           </span>Utah<span
+style='mso-spacerun:yes'>        </span>Vermont <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:9.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><span style='mso-spacerun:yes'>            
+</span>5<span style='mso-spacerun:yes'>              </span>2<span
+style='mso-spacerun:yes'>              </span>2<span
+style='mso-spacerun:yes'>              </span>3<span
+style='mso-spacerun:yes'>              </span>5 <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:9.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><span style='mso-spacerun:yes'>     
+</span>Virginia<span style='mso-spacerun:yes'>     </span>Washington<span
+style='mso-spacerun:yes'>  </span>West Virginia<span
+style='mso-spacerun:yes'>      </span>Wisconsin<span
+style='mso-spacerun:yes'>        </span>Wyoming <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:9.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><span style='mso-spacerun:yes'>            
+</span>2<span style='mso-spacerun:yes'>              </span>2<span
+style='mso-spacerun:yes'>              </span>5<span
+style='mso-spacerun:yes'>              </span>5<span
+style='mso-spacerun:yes'>              </span>2<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:
+Consolas'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoListParagraph style='margin-top:0in;margin-right:0in;margin-bottom:
+0in;margin-left:.75in;mso-add-space:auto;text-indent:-.25in;line-height:normal;
+mso-list:l1 level1 lfo9'><![if !supportLists]><b style='mso-bidi-font-weight:
+normal'><span style='font-size:14.0pt;mso-bidi-font-size:11.0pt;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin;color:red'><span style='mso-list:Ignore'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></b><![endif]><b
+style='mso-bidi-font-weight:normal'><u><span style='font-size:14.0pt;
+mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas;color:red'>College data - K-means method<o:p></o:p></span></u></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:14.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:
+Consolas'>Our task will be to cluster Colleges into more homogeneous groups.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:
+Consolas'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'>&gt; attach(College);<span
+style='mso-spacerun:yes'>   </span>names(College)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-family:"Arial Narrow",sans-serif;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:"Times New Roman"'><span
+style='mso-spacerun:yes'> </span>[1] &quot;Private&quot;<span
+style='mso-spacerun:yes'>     </span>&quot;Apps&quot;<span
+style='mso-spacerun:yes'>        </span>&quot;Accept&quot;<span
+style='mso-spacerun:yes'>      </span>&quot;Enroll&quot;<span
+style='mso-spacerun:yes'>      </span>&quot;Top10perc&quot;<span
+style='mso-spacerun:yes'>   </span>&quot;Top25perc&quot;<span
+style='mso-spacerun:yes'>   </span>&quot;<span class=SpellE>F.Undergrad</span>&quot;
+&quot;<span class=SpellE>P.Undergrad</span>&quot; &quot;Outstate&quot;<span
+style='mso-spacerun:yes'>    </span>&quot;<span class=SpellE>Room.Board</span>&quot;
+<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-family:"Arial Narrow",sans-serif;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:"Times New Roman"'>[11] &quot;Books&quot;<span
+style='mso-spacerun:yes'>       </span>&quot;Personal&quot;<span
+style='mso-spacerun:yes'>    </span>&quot;PhD&quot;<span
+style='mso-spacerun:yes'>         </span>&quot;Terminal&quot;<span
+style='mso-spacerun:yes'>    </span>&quot;<span class=SpellE>S.F.Ratio</span>&quot;<span
+style='mso-spacerun:yes'>   </span>&quot;<span class=SpellE>perc.alumni</span>&quot;
+&quot;Expend&quot;<span style='mso-spacerun:yes'>      </span>&quot;<span
+class=SpellE>Grad.Rate</span>&quot;<span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:
+Consolas'>We need to create a matrix of numeric variables. We’ve used this
+command to prepare data for LASSO.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:
+Consolas'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'>&gt; X = <span class=SpellE><span
+style='background:yellow;mso-highlight:yellow'>model.matrix</span></span>(
+Private ~ . + <span class=SpellE>as.numeric</span>(Private), data=College )<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'>&gt; dim(X)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'>[1] 777<span style='mso-spacerun:yes'> 
+</span>19<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'>&gt; <span style='background:yellow;mso-highlight:
+yellow'>head(X)</span><span style='mso-tab-count:2'>                         </span><b
+style='mso-bidi-font-weight:normal'>Instead of printing the entire matrix,
+“head” only shows the first few rows<o:p></o:p></b></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:
+Consolas'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:8.0pt;mso-bidi-font-size:11.0pt;font-family:"Lucida Console";
+mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:Consolas'><span
+style='mso-spacerun:yes'>                             </span>(Intercept) Apps
+Accept Enroll Top10perc Top25perc <span class=SpellE>F.Undergrad</span> <span
+class=SpellE>P.Undergrad</span> Outstate <span class=SpellE>Room.Board</span>
+Books Personal PhD<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:8.0pt;mso-bidi-font-size:11.0pt;font-family:"Lucida Console";
+mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:Consolas'>Abilene
+Christian University<span style='mso-spacerun:yes'>           </span>1
+1660<span style='mso-spacerun:yes'>   </span>1232<span
+style='mso-spacerun:yes'>    </span>721<span style='mso-spacerun:yes'>       
+</span>23<span style='mso-spacerun:yes'>        </span>52<span
+style='mso-spacerun:yes'>        </span>2885<span
+style='mso-spacerun:yes'>         </span>537<span style='mso-spacerun:yes'>    
+</span>7440<span style='mso-spacerun:yes'>       </span>3300<span
+style='mso-spacerun:yes'>   </span>450<span style='mso-spacerun:yes'>    
+</span>2200<span style='mso-spacerun:yes'>  </span>70<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:8.0pt;mso-bidi-font-size:11.0pt;font-family:"Lucida Console";
+mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:Consolas'>Adelphi
+University<span style='mso-spacerun:yes'>                     </span>1
+2186<span style='mso-spacerun:yes'>   </span>1924<span
+style='mso-spacerun:yes'>    </span>512<span style='mso-spacerun:yes'>       
+</span>16<span style='mso-spacerun:yes'>        </span>29<span
+style='mso-spacerun:yes'>        </span>2683<span
+style='mso-spacerun:yes'>        </span>1227<span style='mso-spacerun:yes'>   
+</span>12280<span style='mso-spacerun:yes'>       </span>6450<span
+style='mso-spacerun:yes'>   </span>750<span style='mso-spacerun:yes'>    
+</span>1500<span style='mso-spacerun:yes'>  </span>29<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:8.0pt;mso-bidi-font-size:11.0pt;font-family:"Lucida Console";
+mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:Consolas'>Adrian
+College<span style='mso-spacerun:yes'>                      </span><span
+style='mso-spacerun:yes'>   </span>1 1428<span style='mso-spacerun:yes'>  
+</span>1097<span style='mso-spacerun:yes'>    </span>336<span
+style='mso-spacerun:yes'>        </span>22<span
+style='mso-spacerun:yes'>        </span>50<span
+style='mso-spacerun:yes'>        </span>1036<span
+style='mso-spacerun:yes'>          </span>99<span style='mso-spacerun:yes'>   
+</span>11250<span style='mso-spacerun:yes'>       </span>3750<span
+style='mso-spacerun:yes'>   </span>400<span style='mso-spacerun:yes'>    
+</span>1165<span style='mso-spacerun:yes'>  </span>53<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:8.0pt;mso-bidi-font-size:11.0pt;font-family:"Lucida Console";
+mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:Consolas'>Agnes
+Scott College<span style='mso-spacerun:yes'>                    </span>1<span
+style='mso-spacerun:yes'>  </span>417<span style='mso-spacerun:yes'>   
+</span>349<span style='mso-spacerun:yes'>    </span>137<span
+style='mso-spacerun:yes'>        </span>60<span
+style='mso-spacerun:yes'>        </span>89<span
+style='mso-spacerun:yes'>         </span>510<span
+style='mso-spacerun:yes'>          </span>63<span style='mso-spacerun:yes'>   
+</span>12960<span style='mso-spacerun:yes'>       </span>5450<span
+style='mso-spacerun:yes'>   </span>450<span style='mso-spacerun:yes'>     
+</span>875<span style='mso-spacerun:yes'>  </span>92<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:8.0pt;mso-bidi-font-size:11.0pt;font-family:"Lucida Console";
+mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:Consolas'>Alaska
+Pacific University<span style='mso-spacerun:yes'>              </span>1<span
+style='mso-spacerun:yes'>  </span>193<span style='mso-spacerun:yes'>   
+</span>146<span style='mso-spacerun:yes'>     </span>55<span
+style='mso-spacerun:yes'>        </span>16<span
+style='mso-spacerun:yes'>        </span>44<span
+style='mso-spacerun:yes'>         </span>249<span
+style='mso-spacerun:yes'>         </span>869<span style='mso-spacerun:yes'>    
+</span>7560<span style='mso-spacerun:yes'>       </span>4120<span
+style='mso-spacerun:yes'>   </span>800<span style='mso-spacerun:yes'>    
+</span>1500<span style='mso-spacerun:yes'>  </span>76<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:8.0pt;mso-bidi-font-size:11.0pt;font-family:"Lucida Console";
+mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:Consolas'>Albertson
+College<span style='mso-spacerun:yes'>                      </span>1<span
+style='mso-spacerun:yes'>  </span>587<span style='mso-spacerun:yes'>   
+</span>479<span style='mso-spacerun:yes'>    </span>158<span
+style='mso-spacerun:yes'>        </span>38<span
+style='mso-spacerun:yes'>        </span>62<span
+style='mso-spacerun:yes'>         </span>678<span
+style='mso-spacerun:yes'>          </span>41<span style='mso-spacerun:yes'>   
+</span>13500<span style='mso-spacerun:yes'>       </span>3335<span
+style='mso-spacerun:yes'>   </span>500<span style='mso-spacerun:yes'>     
+</span>675<span style='mso-spacerun:yes'>  </span>67<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:8.0pt;mso-bidi-font-size:11.0pt;font-family:"Lucida Console";
+mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:Consolas'><span
+style='mso-spacerun:yes'>                             </span>Terminal <span
+class=SpellE>S.F.Ratio</span> <span class=SpellE>perc.alumni</span> Expend <span
+class=SpellE>Grad.Rate</span> <span class=SpellE>as.numeric</span>(Private)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:8.0pt;mso-bidi-font-size:11.0pt;font-family:"Lucida Console";
+mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:Consolas'>Abilene
+Christian University<span style='mso-spacerun:yes'>       </span>78<span
+style='mso-spacerun:yes'>      </span>18.1<span
+style='mso-spacerun:yes'>          </span>12<span style='mso-spacerun:yes'>  
+</span>7041<span style='mso-spacerun:yes'>        </span>60<span
+style='mso-spacerun:yes'>                   </span>2<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:8.0pt;mso-bidi-font-size:11.0pt;font-family:"Lucida Console";
+mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:Consolas'>Adelphi
+University<span style='mso-spacerun:yes'>                 </span>30<span
+style='mso-spacerun:yes'>      </span>12.2<span
+style='mso-spacerun:yes'>          </span>16<span style='mso-spacerun:yes'> 
+</span>10527<span style='mso-spacerun:yes'>        </span>56<span
+style='mso-spacerun:yes'>                   </span>2<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:8.0pt;mso-bidi-font-size:11.0pt;font-family:"Lucida Console";
+mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:Consolas'>Adrian
+College<span style='mso-spacerun:yes'>                     </span>66<span
+style='mso-spacerun:yes'>      </span>12.9<span
+style='mso-spacerun:yes'>          </span>30<span style='mso-spacerun:yes'>  
+</span>8735<span style='mso-spacerun:yes'>        </span>54<span
+style='mso-spacerun:yes'>                   </span>2<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:8.0pt;mso-bidi-font-size:11.0pt;font-family:"Lucida Console";
+mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:Consolas'>Agnes
+Scott College<span style='mso-spacerun:yes'>                </span>97<span
+style='mso-spacerun:yes'>       </span>7.7<span
+style='mso-spacerun:yes'>          </span>37<span style='mso-spacerun:yes'> 
+</span>19016<span style='mso-spacerun:yes'>        </span>59<span
+style='mso-spacerun:yes'>                   </span>2<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:8.0pt;mso-bidi-font-size:11.0pt;font-family:"Lucida Console";
+mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:Consolas'>Alaska
+Pacific University<span style='mso-spacerun:yes'>          </span>72<span
+style='mso-spacerun:yes'>      </span>11.9<span
+style='mso-spacerun:yes'>           </span>2<span style='mso-spacerun:yes'> 
+</span>10922<span style='mso-spacerun:yes'>        </span>15<span
+style='mso-spacerun:yes'>                   </span>2<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:8.0pt;mso-bidi-font-size:11.0pt;font-family:"Lucida Console";
+mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:Consolas'>Albertson
+College<span style='mso-spacerun:yes'>                  </span>73<span
+style='mso-spacerun:yes'>       </span>9.4<span
+style='mso-spacerun:yes'>          </span>11<span style='mso-spacerun:yes'>  
+</span>9727<span style='mso-spacerun:yes'>        </span>55<span
+style='mso-spacerun:yes'>                   </span>2<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:8.0pt;mso-bidi-font-size:11.0pt;font-family:"Lucida Console";
+mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:Consolas'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:8.0pt;mso-bidi-font-size:11.0pt;font-family:"Lucida Console";
+mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:Consolas'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:8.0pt;mso-bidi-font-size:11.0pt;font-family:"Lucida Console";
+mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:Consolas'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:
+Consolas'>Now, let’s create K=5 clusters by the K-means method. No new library
+is needed, this command comes with basic R.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:
+Consolas'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'>&gt; KM5 = <span class=SpellE><span
+style='background:yellow;mso-highlight:yellow'>kmeans</span></span><span
+style='background:yellow;mso-highlight:yellow'>( X, 5 )</span> <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-family:"Lucida Console";mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'>&gt; KM5<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:"Lucida Console";
+mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:Consolas'>K-means
+clustering with 5 clusters of sizes 20, 113, 162, 431, 51<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:"Lucida Console";
+mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:Consolas'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:"Lucida Console";
+mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:Consolas'>Cluster
+means:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:"Lucida Console";
+mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:Consolas'><span
+style='mso-spacerun:yes'>  </span>(Intercept)<span
+style='mso-spacerun:yes'>      </span>Apps<span style='mso-spacerun:yes'>   
+</span>Accept<span style='mso-spacerun:yes'>    </span>Enroll Top10perc
+Top25perc <span class=SpellE>F.Undergrad</span> <span class=SpellE>P.Undergrad</span><span
+style='mso-spacerun:yes'>  </span>Outstate <span class=SpellE>Room.Board</span><span
+style='mso-spacerun:yes'>    </span>Books Personal<span
+style='mso-spacerun:yes'>      </span>PhD Terminal<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:"Lucida Console";
+mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:Consolas'>1<span
+style='mso-spacerun:yes'>           </span>1<span style='mso-spacerun:yes'> 
+</span>9341.750 3606.2500 1321.9500<span style='mso-spacerun:yes'> 
+</span>76.05000<span style='mso-spacerun:yes'>  </span>91.70000<span
+style='mso-spacerun:yes'>    </span>5283.200<span style='mso-spacerun:yes'>   
+</span>427.2000 18119.750<span style='mso-spacerun:yes'>   </span>6042.750
+576.6000 1255.550 93.30000 96.80000<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:"Lucida Console";
+mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:Consolas'>2<span
+style='mso-spacerun:yes'>           </span>1<span style='mso-spacerun:yes'> 
+</span>5012.602 3410.1150 1526.5310<span style='mso-spacerun:yes'> 
+</span>21.56637<span style='mso-spacerun:yes'>  </span>52.28319<span
+style='mso-spacerun:yes'>    </span>8021.566<span style='mso-spacerun:yes'>  
+</span>2111.3097<span style='mso-spacerun:yes'>  </span>6709.283<span
+style='mso-spacerun:yes'>   </span>3703.912 557.1416 1727.186 77.01770 83.65487<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:"Lucida Console";
+mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:Consolas'>3<span
+style='mso-spacerun:yes'>           </span>1<span style='mso-spacerun:yes'> 
+</span>2566.364 1712.7901<span style='mso-spacerun:yes'>  </span>521.5123<span
+style='mso-spacerun:yes'>  </span>39.83333<span style='mso-spacerun:yes'> 
+</span>68.96914<span style='mso-spacerun:yes'>    </span>2067.241<span
+style='mso-spacerun:yes'>    </span>282.4444 15732.512<span
+style='mso-spacerun:yes'>   </span>5257.864 578.0926 1042.772 83.31481 90.24074<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:"Lucida Console";
+mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:Consolas'>4<span
+style='mso-spacerun:yes'>           </span>1<span style='mso-spacerun:yes'> 
+</span>1140.610<span style='mso-spacerun:yes'>  </span>869.9258<span
+style='mso-spacerun:yes'>  </span>341.7007<span style='mso-spacerun:yes'> 
+</span>21.40371<span style='mso-spacerun:yes'>  </span>48.75638<span
+style='mso-spacerun:yes'>    </span>1434.332<span style='mso-spacerun:yes'>   
+</span>475.6450<span style='mso-spacerun:yes'>  </span>9263.759<span
+style='mso-spacerun:yes'>   </span>4110.290 530.1206 1299.220 65.03016 72.61717<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:"Lucida Console";
+mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:Consolas'>5<span
+style='mso-spacerun:yes'>           </span>1 13169.804 8994.7647 3438.1176<span
+style='mso-spacerun:yes'>  </span>34.84314<span style='mso-spacerun:yes'> 
+</span>67.15686<span style='mso-spacerun:yes'>   </span>17836.020<span
+style='mso-spacerun:yes'>   </span>3268.3529<span style='mso-spacerun:yes'> 
+</span>8833.510<span style='mso-spacerun:yes'>   </span>4374.353 593.0784
+1813.784 85.54902 90.64706<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:"Lucida Console";
+mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:Consolas'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:"Lucida Console";
+mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:Consolas'><span
+style='mso-spacerun:yes'>  </span><span class=SpellE>S.F.Ratio</span> <span
+class=SpellE>perc.alumni</span><span style='mso-spacerun:yes'>    </span>Expend
+<span class=SpellE>Grad.Rate</span> <span class=SpellE>as.numeric</span>(Private)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:"Lucida Console";
+mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:Consolas'>1<span
+style='mso-spacerun:yes'>   </span>6.61500<span style='mso-spacerun:yes'>   
+</span>35.35000 32347.900<span style='mso-spacerun:yes'>  </span>88.95000<span
+style='mso-spacerun:yes'>            </span>2.000000<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:"Lucida Console";
+mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:Consolas'>2<span
+style='mso-spacerun:yes'>  </span>17.46903<span style='mso-spacerun:yes'>   
+</span>14.02655<span style='mso-spacerun:yes'>  </span>7067.257<span
+style='mso-spacerun:yes'>  </span>54.91150<span
+style='mso-spacerun:yes'>            </span>1.079646<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:"Lucida Console";
+mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:Consolas'>3<span
+style='mso-spacerun:yes'>  </span>11.43333<span style='mso-spacerun:yes'>   
+</span>32.76543 13728.735<span style='mso-spacerun:yes'>  </span>76.64198<span
+style='mso-spacerun:yes'>            </span>1.993827<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:"Lucida Console";
+mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:Consolas'>4<span
+style='mso-spacerun:yes'>  </span>14.32343<span style='mso-spacerun:yes'>   
+</span>21.36659<span style='mso-spacerun:yes'>  </span>7677.035<span
+style='mso-spacerun:yes'>  </span>63.13225<span
+style='mso-spacerun:yes'>            </span>1.856148<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:"Lucida Console";
+mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:Consolas'>5<span
+style='mso-spacerun:yes'>  </span>15.99608<span style='mso-spacerun:yes'>   
+</span>16.92157 10343.882<span style='mso-spacerun:yes'>  </span>63.82353<span
+style='mso-spacerun:yes'>            </span>1.117647<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:"Lucida Console";
+mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:Consolas'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:"Lucida Console";
+mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:Consolas'>Clustering
+vector:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:"Lucida Console";
+mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:Consolas'><span
+style='mso-spacerun:yes'>                 </span>Abilene Christian
+University<span style='mso-spacerun:yes'>                           
+</span>Adelphi University<span
+style='mso-spacerun:yes'>                                </span>Adrian College <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:"Lucida Console";
+mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:Consolas'><span
+style='mso-spacerun:yes'>                                           
+</span>4<span
+style='mso-spacerun:yes'>                                            
+</span>3<span
+style='mso-spacerun:yes'>                                             </span>4 <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:"Lucida Console";
+mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:Consolas'><span
+style='mso-spacerun:yes'>                          </span>Agnes Scott
+College<span style='mso-spacerun:yes'>                     </span>Alaska
+Pacific University<span style='mso-spacerun:yes'>                            
+</span>Albertson College <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:"Lucida Console";
+mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:Consolas'><span
+style='mso-spacerun:yes'>                                           
+</span>3<span
+style='mso-spacerun:yes'>                                            
+</span>4<span
+style='mso-spacerun:yes'>                                             </span>4 <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:"Lucida Console";
+mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:Consolas'><span
+style='mso-spacerun:yes'>                      </span>Albertus Magnus
+College<span style='mso-spacerun:yes'>                               
+</span>Albion College<span
+style='mso-spacerun:yes'>                              </span>Albright College <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:"Lucida Console";
+mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:Consolas'><span
+style='mso-spacerun:yes'>                                           
+</span>4<span
+style='mso-spacerun:yes'>                                            
+</span>3<span
+style='mso-spacerun:yes'>                                             </span>3 <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:"Lucida Console";
+mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:Consolas'><span
+style='mso-spacerun:yes'>                    </span>Alderson-Broaddus
+College<span style='mso-spacerun:yes'>                            
+</span>Alfred University<span
+style='mso-spacerun:yes'>                             </span>Allegheny College <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:"Lucida Console";
+mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:Consolas'><span
+style='mso-spacerun:yes'>                                           
+</span>4<span
+style='mso-spacerun:yes'>                                            
+</span>3<span
+style='mso-spacerun:yes'>                                             </span>3 <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:"Lucida Console";
+mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:Consolas'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:"Lucida Console";
+mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:Consolas'>&lt;truncated&gt;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:"Lucida Console";
+mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:Consolas'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:"Lucida Console";
+mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:Consolas'>Within
+cluster sum of squares by cluster:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:"Lucida Console";
+mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:Consolas'>[1]
+2115931982 3262290091 3917614114 5524699694 5934672728<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:"Lucida Console";
+mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:Consolas'><span
+style='mso-spacerun:yes'> </span>(<span class=SpellE>between_SS</span> / <span
+class=SpellE>total_SS</span> =<span style='mso-spacerun:yes'>  </span>71.2 %)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:"Lucida Console";
+mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:Consolas'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:"Lucida Console";
+mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:Consolas'>Available
+components:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:"Lucida Console";
+mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:Consolas'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:"Lucida Console";
+mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:Consolas'>[1]
+&quot;cluster&quot;<span style='mso-spacerun:yes'>     
+</span>&quot;centers&quot;<span style='mso-spacerun:yes'>      </span>&quot;<span
+class=SpellE>totss</span>&quot;<span style='mso-spacerun:yes'>       
+</span>&quot;<span class=SpellE>withinss</span>&quot;<span
+style='mso-spacerun:yes'>     </span>&quot;<span class=SpellE>tot.withinss</span>&quot;
+&quot;<span class=SpellE>betweenss</span>&quot;<span
+style='mso-spacerun:yes'>    </span>&quot;size&quot;<span
+style='mso-spacerun:yes'>         </span>&quot;<span class=SpellE>iter</span>&quot;<span
+style='mso-spacerun:yes'>         </span>&quot;<span class=SpellE>ifault</span>&quot;<span
+style='mso-spacerun:yes'>      </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:
+Consolas'>We can see the cluster assignment (truncated), multivariate cluster
+means (centroids), within and between sums of squares as measures of cluster
+purity. To explore the obtained clusters, we can plot some pairs of variables
+along with the assigned clusters:<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:
+Consolas'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-family:"Lucida Console";mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'>&gt; par(<span class=SpellE>mfrow</span>=c(2,2))<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-family:"Lucida Console";mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'>&gt; plot( Outstate, Top10perc, col=KM5$cluster
+)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-family:"Lucida Console";mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'>&gt; plot( <span class=SpellE>S.F.Ratio</span>,
+PhD, col=KM5$cluster )<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-family:"Lucida Console";mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'>&gt; plot( Apps, Enroll, col=KM5$cluster )<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-family:"Lucida Console";mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'>&gt; plot( <span class=SpellE>Room.Board</span>,
+Private, col=KM5$cluster )<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_1"
+ o:spid="_x0000_i1027" type="#_x0000_t75" style='width:490pt;height:444pt;
+ visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="20%20Clustering_files/image009.png" o:title="" croptop="4918f"
+  cropbottom="1205f"/>
+</v:shape><![endif]--><![if !vml]><img width=653 height=592
+src="20%20Clustering_files/image010.jpg" v:shapes="Picture_x0020_1"><![endif]></span><span
+style='font-family:"Lucida Console";mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:
+Consolas'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:
+Consolas'>For example, we can see here that the green cluster consists of
+rather expensive and relatively small private colleges with a high <span
+class=GramE>percent</span> of PhD degrees among faculty and small class sizes
+because of a low student-to-faculty ratio. <o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:
+Consolas'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:
+Consolas'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoListParagraph style='margin-top:0in;margin-right:0in;margin-bottom:
+0in;margin-left:.75in;mso-add-space:auto;text-indent:-.25in;line-height:normal;
+mso-list:l1 level1 lfo9'><![if !supportLists]><b style='mso-bidi-font-weight:
+normal'><span style='font-size:14.0pt;mso-bidi-font-size:11.0pt;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:minor-latin;color:red'><span style='mso-list:Ignore'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></b><![endif]><b
+style='mso-bidi-font-weight:normal'><u><span style='font-size:14.0pt;
+mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas;color:red'>College data - Hierarchical Clustering<o:p></o:p></span></u></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:14.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:
+Consolas'>Without specifying the number K of clusters, apply hierarchical
+clustering algorithm to the College data.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:
+Consolas'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'>&gt; HC = <span class=SpellE><span
+style='background:yellow;mso-highlight:yellow'>hclust</span></span><span
+style='background:yellow;mso-highlight:yellow'>( <span class=SpellE>dist</span>(X),
+method=&quot;complete&quot; )</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:
+Consolas'>Here, “<span class=SpellE>dist</span>” <span class=GramE>stays</span>
+for distance between multivariate observations, and method can be “complete”,
+“single”, “average”, “median”, etc. – it is a method of determining similarity
+with clusters and dissimilarity between clusters.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:
+Consolas'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+class=GramE><b style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;
+mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'>The</span></b></span><b style='mso-bidi-font-weight:
+normal'><span style='font-size:12.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:
+CSongGB18030C-LightHWL;mso-bidi-font-family:Consolas'> full dendrogram with so
+many <span class=SpellE>leafs</span> would not be legible.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'>&gt; plot(HC)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:
+Consolas'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:
+Consolas;mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_6"
+ o:spid="_x0000_i1026" type="#_x0000_t75" style='width:416pt;height:312pt;
+ visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="20%20Clustering_files/image011.emz" o:title="" croptop="2567f"
+  cropbottom="7996f"/>
+</v:shape><![endif]--><![if !vml]><img width=555 height=416
+src="20%20Clustering_files/image012.png" v:shapes="Picture_x0020_6"><![endif]></span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:
+Consolas'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:
+Consolas'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:
+Consolas'>To illustrate the method, let’s take a small random sample of
+colleges and cluster them hierarchically.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:
+Consolas'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'>&gt; Z = sample(n,20) <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'>&gt; Y = X[Z,]<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'>&gt; HCZ = <span class=SpellE>hclust</span>( <span
+class=SpellE>dist</span>(Y), method=&quot;complete&quot; )<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'>&gt; plot(HCZ)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_7"
+ o:spid="_x0000_i1025" type="#_x0000_t75" style='width:429.5pt;height:290pt;
+ visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="20%20Clustering_files/image013.png" o:title="" croptop="2442f"
+  cropbottom="9520f"/>
+</v:shape><![endif]--><![if !vml]><img width=573 height=387
+src="20%20Clustering_files/image014.jpg" v:shapes="Picture_x0020_7"><![endif]></span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:
+Consolas'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:
+Consolas'>We can choose where to “cut” this tree to create clusters. For
+example, <span class=GramE>we let’s</span> create 4 clusters.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:
+Consolas'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'>&gt; HC4 = <span class=SpellE><span
+style='background:yellow;mso-highlight:yellow'>cutree</span></span>(HC, k = 4)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'>&gt; HC4<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><span style='mso-spacerun:yes'>       
+</span>Christian Brothers University<span style='mso-spacerun:yes'>        
+</span>Nazareth College of Rochester <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><span
+style='mso-spacerun:yes'>                                    </span>1<span
+style='mso-spacerun:yes'>                                     </span>1 <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><span style='mso-spacerun:yes'>                 
+</span>Sweet Briar College<span style='mso-spacerun:yes'>                    
+</span>Dartmouth College <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><span
+style='mso-spacerun:yes'>                                    </span>1<span
+style='mso-spacerun:yes'>                                     </span>2 <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><span
+style='mso-spacerun:yes'>                       </span>Eckerd College<span
+style='mso-spacerun:yes'>          </span>Appalachian State University <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:12.0pt;mso-bidi-font-size:11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;
+mso-bidi-font-family:Consolas'><span
+style='mso-spacerun:yes'>                                    </span>1<span
+style='mso-spacerun:yes'>                                     </span>3<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:
+Consolas'>&lt; truncated &gt;<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:
+Consolas'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:
+Consolas'>So, we get assignments of colleges into clusters. <o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+11.0pt;mso-fareast-font-family:CSongGB18030C-LightHWL;mso-bidi-font-family:
+Consolas'><o:p>&nbsp;</o:p></span></b></p>
+
+</div>
+
+</body>
+
+</html>
