@@ -1,0 +1,29 @@
+This survey was conducted in 1980 by the University of Wisconsin Small
+Business Development Center. The purpose was ``to develop data that would
+be useful to small business counselors in advising managers as to how to
+effectively plan and operate their small restaurants''.
+
+Nineteen of Wisconsin's counties were selected for study. Lists of
+restaurants were drawn up from telephone directories and these were
+sampled in proportion to the population of the county. A sample of 1000
+restaurants yielded 279 usable responses. The data base thus consists of
+279 summaries of the returned questionnaires. Some respondents failed to
+present complete answers. Thus, there are a number of missing values,
+which are coded by ".". 
+
+ 
+ COLUMN    NAME      COUNT   MISSING
+ C1        ID          279   <This column was later removed>
+ C2        OUTLOOK     279         1
+ C3        SALES       279        25
+ C4        NEWCAP      279        55
+ C5        VALUE       279        39
+ C6        COSTGOOD    279        42
+ C7        WAGES       279        44
+ C8        ADS         279        44
+ C9        TYPEFOOD    279        12
+ C10       SEATS       279        11
+ C11       OWNER       279        10
+ C12       FT.EMPL     279        14
+ C13       PT.EMPL     279        13
+ C14       SIZE        279        16

@@ -1,0 +1,5 @@
+Titanic
+Download link: Titanic.csv
+Description: Data on passengers of the RMS Titanic. Entries include the name, age, class, fare, gender, and whether or not the passenger survived
+Note: Blank ages are unknown, and fare can have more than two digits because money was not base-10 at that time Titanic Fare Data
+
