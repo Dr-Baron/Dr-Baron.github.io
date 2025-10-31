@@ -1,0 +1,12 @@
+Year	Investment	Profit
+8	17	no
+9	23	no
+10	31	yes
+11	29	no
+12	33	yes
+13	39	yes
+14	39	yes
+15	40	yes
+16	41	no
+17	44	yes
+18	47	yes

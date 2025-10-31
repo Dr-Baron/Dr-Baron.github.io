@@ -1,0 +1,16 @@
+Size	Classification
+0.4	Benign
+2.1	Benign
+3.6	Benign
+0.6	Benign
+0.8	Benign
+2.4	Benign
+4	Benign
+1.2	Malicious
+0.2	Malicious
+0.3	Malicious
+3.3	Malicious
+2	Malicious
+0.9	Malicious
+1.1	Malicious
+1.5	Malicious
