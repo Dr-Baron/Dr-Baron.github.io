@@ -1,0 +1,129 @@
+> setwd("C:\\Users\\baron\\Dropbox\\624 Data Analysis\\data\\My data")
+> FG = read.table("Field goals.txt")
+> fix(FG)
+> summary(FG)
+       V1             V2               V3        
+ Min.   :18.0   Min.   :0.0000   Min.   : 1.000  
+ 1st Qu.:28.0   1st Qu.:1.0000   1st Qu.: 5.000  
+ Median :37.0   Median :1.0000   Median : 9.000  
+ Mean   :36.5   Mean   :0.7975   Mean   : 8.989  
+ 3rd Qu.:45.0   3rd Qu.:1.0000   3rd Qu.:13.000  
+ Max.   :62.0   Max.   :1.0000   Max.   :17.000  
+
+> dim(FG)
+[1] 948   3
+
+> attach(FG)
+> Yards = V1; Success = V2; Week = V3;
+
+> lreg = glm( Success ~ Yards + Week, family=binomial )
+
+> summary(lreg)
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  6.29969    0.51105  12.327   <2e-16 ***
+Yards       -0.11274    0.01076 -10.477   <2e-16 ***
+Week        -0.05243    0.01832  -2.862   0.0042 ** 
+
+
+> Logit = function(x,y){f = 6.3 - 0.11*x - 0.05*y; return(f)}
+
+> curve(Logit(x,10),0,70)
+
+> OddsRatio = function(x,y){g = exp(Logit(x,y)); return(g)}
+> curve(OddsRatio(x,10),0,70)
+
+> Probability = function(x,y){p = exp(Logit(x,y))/(1+exp(Logit(x,y))); return(p)}
+> curve(Probability(x,10),0,70)
+> curve(Probability(x,10),0,100)
+
+> Probability(64,14)
+[1] 0.1915453
+
+> Success.predicted = rep(1,length(Success))
+> Success.predicted[ Phat < 0.5 ] = 0
+> table( Success, Success.predicted )
+       Success.predicted
+Success   0   1
+      0  31 161
+      1  20 736
+> mean( Success == Success.predicted )
+[1] 0.8090717
+
+
+LDA
+
+> library(MASS)
+> lda( Success ~ Yards + Week )
+Call:
+lda(Success ~ Yards + Week)
+
+Prior probabilities of groups:
+        0         1 
+0.2025316 0.7974684 
+
+Group means:
+     Yards     Week
+0 43.63021 9.661458
+1 34.69444 8.818783
+
+Coefficients of linear discriminants:
+              LD1
+Yards -0.10868872
+Week  -0.04644079
+
+
+
+> lda.fit = lda( Success ~ Yards + Week, CV = TRUE )
+> table( Success, lda.fit$class )
+       
+Success   0   1
+      0  29 163
+      1  18 738
+> mean( Success==lda.fit$class )
+[1] 0.8090717
+
+
+
+QDA
+
+
+> qda.fit = qda( Success ~ Yards + Week, CV = TRUE )
+> table( Success, qda.fit$class )
+       
+Success   0   1
+      0  16 176
+      1  15 741
+> mean( Success==qda.fit$class )
+[1] 0.7985232
+
+Too optimistic...
+
+> qda.fit = qda( Success ~ Yards + Week, prior=c(0.5,0.5), CV = TRUE )
+> mean( Success==qda.fit$class )
+[1] 0.6487342
+> table( Success, qda.fit$class )
+       
+Success   0   1
+      0 144  48
+      1 285 471
+
+Too pessimistic...
+
+
+KNN
+
+
+> X.train = cbind(Yards,Week)[Z==1,]
+> X.test = cbind(Yards,Week)[Z==0,]
+> Y.train = c(Success[Z==1])
+> Y.test = c(Success[Z==0])
+> knn.fit = knn( X.train, X.test, Y.train, 5 )
+
+> table( Y.test, knn.fit )
+      knn.fit
+Y.test   0   1
+     0  19  72
+     1  36 345
+> mean( Y.test == knn.fit )
+[1] 0.7711864
