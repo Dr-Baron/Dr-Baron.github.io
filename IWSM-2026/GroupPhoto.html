@@ -2,25 +2,20 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>IWSM 2026 Group Photo</title>
+<title>IWSM-2026 Group Photo</title>
 
 <style>
-.photo-container{
-    position:relative;
-    display:inline-block;
-}
+.photo-container{position:relative;   display:inline-block;}   /* The photo container becomes the coordinate system for the markers. */
 
-.photo-container img{
-    max-width:100%;
-}
+.photo-container img{ max-width:100%;}  /* Makes the photo automatically fit the browser window. */
 
 .person{
-    position:absolute;
-    width:20px;
-    height:20px;
-
-    border-radius:50%;
-    background:rgba(0,0,0,0;
+    position:absolute;       /* Place each marker at an exact coordinate */
+    width:30px;      
+    height:30px;             /* Each marker is a 20×20 pixel circle. */
+    border-radius:50%;               /* Turns the square into a circle. */
+    background:rgba(200,200,200,0);    /* Creates a dot, red + green + blue + opacity (transparancy) */
+    transform:translate(-50%,-50%);
     cursor:pointer;
 }
 </style>
@@ -28,16 +23,158 @@
 
 <body>
 
-<h2>IWSM 2026 Group Photo</h2>
+<h2>IWSM-2026 Group Photo. American University, Washington DC, USA; June 2, 2026</h2>
 
 <div class="photo-container">
 
-<img src="IWSM Group Photo.jpg">
+<img id="groupPhoto" src="IWSM Group Photo.jpg">
 
-<div class="person" style="left:41%;top:52%;" title="Alexander Tartakovsky"></div>
-<div class="person" style="left:46%;top:49%;" title="Andrew Rukhin"></div>
-
+<div class="person" style="left:36.8%;top:38.9%;" title="#1"></div>
+<div class="person" style="left:39.6%;top:40.7%;" title="#2"></div>
+<div class="person" style="left:43.2%;top:39.3%;" title="#3"></div>
+<div class="person" style="left:46.2%;top:40.5%;" title="#4"></div>
+<div class="person" style="left:48.8%;top:39.5%;" title="#5"></div>
+<div class="person" style="left:54.51%; top:39.52%;" title="Arman Adibi"></div>
+<div class="person" style="left:55.71%; top:39.62%;" title="#7"></div>
+<div class="person" style="left:58.62%; top:38.77%;" title="#8"></div>
+<div class="person" style="left:61.82%; top:40.26%;" title="#10"></div>
+<div class="person" style="left:65.08%; top:39.84%;" title="#11"></div>
+<div class="person" style="left:67.42%; top:38.56%;" title="#12"></div>
+<div class="person" style="left:70.05%; top:38.45%;" title="#13"></div>
+<div class="person" style="left:71.47%; top:38.77%;" title="#14"></div>
+<div class="person" style="left:74.02%; top:38.03%;" title="#15"></div>
+<div class="person" style="left:76.15%; top:38.66%;" title="#16"></div>
+<div class="person" style="left:77.57%; top:37.71%;" title="Farid Aitsahlia"></div>
+<div class="person" style="left:33.43%; top:43.14%;" title="Anastasia Ivanova"></div>
+<div class="person" style="left:37.12%; top:42.39%;" title="#19"></div>
+<div class="person" style="left:41.16%; top:41.96%;" title="#20"></div>
+<div class="person" style="left:45.00%; top:42.07%;" title="#21"></div>
+<div class="person" style="left:50.25%; top:41.75%;" title="#22"></div>
+<div class="person" style="left:52.95%; top:40.90%;" title="#23"></div>
+<div class="person" style="left:55.71%; top:41.22%;" title="#24"></div>
+<div class="person" style="left:60.75%; top:41.96%;" title="Per August Jarval Moen"></div>
+<div class="person" style="left:66.08%; top:42.18%;" title="#26"></div>
+<div class="person" style="left:68.35%; top:40.69%;" title="#27"></div>
+<div class="person" style="left:23.07%; top:44.84%;" title="Jay Bartroff"></div>
+<div class="person" style="left:27.04%; top:45.16%;" title="Bill Rosenberger"></div>
+<div class="person" style="left:31.51%; top:45.37%;" title="#30"></div>
+<div class="person" style="left:38.33%; top:43.99%;" title="#31"></div>
+<div class="person" style="left:42.02%; top:43.88%;" title="#32"></div>
+<div class="person" style="left:48.90%; top:44.63%;" title="SergeyTarima"></div>
+<div class="person" style="left:53.37%; top:44.52%;" title="Venu Veeravalli"></div>
+<div class="person" style="left:61.18%; top:44.84%;" title="Rebecca Killick"></div>
+<div class="person" style="left:64.44%; top:43.24%;" title="#36"></div>
+<div class="person" style="left:68.06%; top:43.14%;" title="#37"></div>
+<div class="person" style="left:71.04%; top:42.28%;" title="#38"></div>
+<div class="person" style="left:71.04%; top:42.28%;" title="#39"></div>
+<div class="person" style="left:73.53%; top:42.50%;" title="#40"></div>
+<div class="person" style="left:75.16%; top:41.75%;" title="#41"></div>
+<div class="person" style="left:77.22%; top:42.50%;" title="#42"></div>
+<div class="person" style="left:78.64%; top:40.47%;" title="#43"></div>
+<div class="person" style="left:80.91%; top:41.65%;" title="Georgios Fellouris"></div>
+<div class="person" style="left:22.71%; top:47.61%;" title="#45"></div>
+<div class="person" style="left:28.67%; top:47.18%;" title="#46"></div>
+<div class="person" style="left:40.10%; top:47.61%;" title="#47"></div>
+<div class="person" style="left:44.22%; top:47.39%;" title="#48"></div>
+<div class="person" style="left:47.98%; top:46.86%;" title="Yaakov Malinovsky"></div>
+<div class="person" style="left:52.09%; top:47.39%;" title="Owen Mica"></div>
+<div class="person" style="left:55.93%; top:47.07%;" title="Erwann Pesme"></div>
+<div class="person" style="left:60.11%; top:47.82%;" title="Benjamin Yakir"></div>
+<div class="person" style="left:64.37%; top:48.14%;" title="Austin Warner"></div>
+<div class="person" style="left:70.26%; top:46.12%;" title="#54"></div>
+<div class="person" style="left:72.53%; top:47.93%;" title="Jyotishka Ray Choudhury"></div>
+<div class="person" style="left:74.24%; top:44.31%;" title="#56"></div>
+<div class="person" style="left:78.43%; top:47.07%;" title="Ansgar Steland"></div>
+<div class="person" style="left:82.12%; top:46.44%;" title="Anamitra Chaudhuri"></div>
+<div class="person" style="left:83.04%; top:43.46%;" title="#59"></div>
+<div class="person" style="left:20.23%; top:50.06%;" title="Yanhong Wu"></div>
+<div class="person" style="left:22.36%; top:52.08%;" title="#61"></div>
+<div class="person" style="left:23.99%; top:51.55%;" title="#62"></div>
+<div class="person" style="left:25.91%; top:52.18%;" title="#63"></div>
+<div class="person" style="left:27.47%; top:49.84%;" title="#64"></div>
+<div class="person" style="left:30.45%; top:50.48%;" title="#65"></div>
+<div class="person" style="left:33.07%; top:48.57%;" title="#66"></div>
+<div class="person" style="left:34.56%; top:49.31%;" title="#67"></div>
+<div class="person" style="left:37.76%; top:51.33%;" title="#68"></div>
+<div class="person" style="left:41.73%; top:49.95%;" title="#69"></div>
+<div class="person" style="left:47.13%; top:50.69%;" title="Vlad Dragalin"></div>
+<div class="person" style="left:51.10%; top:50.06%;" title="Alex Tartakovsky"></div>
+<div class="person" style="left:56.64%; top:52.18%;" title="Serguei Pergamenchtchikov"></div>
+<div class="person" style="left:61.18%; top:52.18%;" title="Yajun Mei"></div>
+<div class="person" style="left:64.87%; top:52.93%;" title="#74"></div>
+<div class="person" style="left:65.22%; top:52.82%;" title="#75"></div>
+<div class="person" style="left:67.50%; top:49.63%;" title="Aytijhya Saha"></div>
+<div class="person" style="left:69.34%; top:51.01%;" title="Elena Buzaianu"></div>
+<div class="person" style="left:72.04%; top:52.82%;" title="#78"></div>
+<div class="person" style="left:75.66%; top:52.40%;" title="#79"></div>
+<div class="person" style="left:81.26%; top:50.38%;" title="Swarnali Banerjee"></div>
+<div class="person" style="left:84.74%; top:47.93%;" title="Arghya Chakraborty"></div>
+<div class="person" style="left:87.23%; top:49.10%;" title="#82"></div>
+<div class="person" style="left:17.10%; top:54.63%;" title="#83"></div>
+<div class="person" style="left:23.21%; top:55.06%;" title="#84"></div>
+<div class="person" style="left:27.82%; top:54.42%;" title="#85"></div>
+<div class="person" style="left:30.16%; top:56.76%;" title="Anat Reiner-Benaim"></div>
+<div class="person" style="left:34.49%; top:54.53%;" title="Yuguo Chen"></div>
+<div class="person" style="left:39.67%; top:55.70%;" title="Theodore Odom"></div>
+<div class="person" style="left:40.53%; top:53.68%;" title="Sharda Sharma"></div>
+<div class="person" style="left:43.65%; top:53.46%;" title="Dila Ram Bhandari"></div>
+<div class="person" style="left:49.11%; top:57.93%;" title="Marlo Brown"></div>
+<div class="person" style="left:53.80%; top:54.10%;" title="Jie Chen"></div>
+<div class="person" style="left:58.13%; top:55.80%;" title="Dong-Yun Kim"></div>
+<div class="person" style="left:63.66%; top:55.49%;" title="Lifang Hsu"></div>
+<div class="person" style="left:67.71%; top:54.10%;" title="Pinyuen Chen"></div>
+<div class="person" style="left:75.37%; top:54.95%;" title="#96"></div>
+<div class="person" style="left:75.23%; top:55.06" title="#97"></div>
+<div class="person" style="left:78.43%; top:53.89%;" title="#98"></div>
+<div class="person" style="left:79.63%; top:56.34%;" title="Debanjan Bhattacharjee"></div>
+<div class="person" style="left:82.61%; top:54.21%;" title="Swathi Venkatesan"></div>
+<div class="person" style="left:83.89%; top:56.44%;" title="Zhe Wang"></div>
+<div class="person" style="left:89.00%; top:52.18%;" title="#102"></div>
+<div class="person" style="left:7.38%; top:59.00%;" title="Tumulesh Solanky"></div>
+<div class="person" style="left:11.99%; top:56.87%;" title="#104"></div>
+<div class="person" style="left:13.77%; top:59.21%;" title="#105"></div>
+<div class="person" style="left:19.09%; top:58.79%;" title="#106"></div>
+<div class="person" style="left:24.06%; top:58.04%;" title="Mohamed Ben Alaya"></div>
+<div class="person" style="left:26.61%; top:60.17%;" title="#108"></div>
+<div class="person" style="left:31.80%; top:60.70%;" title="Michael Baron"></div>
+<div class="person" style="left:36.41%; top:59.53%;" title="Abolfazl Safikhani"></div>
+<div class="person" style="left:41.73%; top:59.00%;" title="#111"></div>
+<div class="person" style="left:46.13%; top:61.13%;" title="Bimal Sinha"></div>
+<div class="person" style="left:50.96%; top:59.64%;" title="Nitis Mukhopadhyay"></div>
+<div class="person" style="left:56.57%; top:59.42%;" title="#114"></div>
+<div class="person" style="left:61.39%; top:60.06%;" title="#115"></div>
+<div class="person" style="left:61.32%; top:59.96%;" title="#116"></div>
+<div class="person" style="left:65.72%; top:59.00%;" title="Yao Xie"></div>
+<div class="person" style="left:68.91%; top:58.89%;" title="#118"></div>
+<div class="person" style="left:74.38%; top:60.17%;" title="Nancy Flournoy"></div>
+<div class="person" style="left:74.88%; top:67.52%;" title="Leonard Hearne"></div>
+<div class="person" style="left:80.55%; top:60.17%;" title="Mahua Mukhopadhyay"></div>
+<div class="person" style="left:84.39%; top:59.42%;" title="Yan Zhuang"></div>
+<div class="person" style="left:88.79%; top:58.79%;" title="#123"></div>
+<div class="person" style="left:90.14%; top:55.80%;" title="Jinjian Mu"></div>
+<div class="person" style="left:93.61%; top:56.55%;" title="Jun Hu"></div>
 </div>
+
+<!--       The following script shows coordinates of each point after clicking there:
+<script>
+
+const photo = document.getElementById('groupPhoto');
+
+photo.addEventListener('click', function(e){
+
+    const rect = photo.getBoundingClientRect();
+
+    const x = 100*(e.clientX - rect.left)/rect.width;
+    const y = 100*(e.clientY - rect.top)/rect.height;
+
+    alert(
+        `left:${x.toFixed(2)}%; top:${y.toFixed(2)}%;`
+    );
+
+});
+
+</script>
+-->
 
 </body>
 </html>
