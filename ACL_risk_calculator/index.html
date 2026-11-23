@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ACL Injury Risk Calculator</title>
+<style>
+:root{font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:#172638;background:#f3f6fa}*{box-sizing:border-box}body{margin:0;padding:32px 16px}.panel{max-width:620px;margin:auto;background:white;border-radius:18px;padding:32px;box-shadow:0 10px 32px #20304715}h1{font-size:1.65rem;margin:0 0 8px}.sub{color:#5d6b7d;margin:0 0 24px}label{display:block;font-weight:650;margin:20px 0 7px}input{width:100%;padding:13px;border:1px solid #bbc6d4;border-radius:9px;font-size:1.05rem}button{width:100%;background:#175aa6;color:white;border:0;border-radius:9px;padding:14px;font-weight:700;font-size:1rem;margin-top:24px;cursor:pointer}button:hover{background:#10477f}.result{background:#edf4fb;border-radius:12px;padding:20px;margin-top:22px}.result h2{font-size:1rem;margin:0 0 10px}.value{font-size:1.8rem;font-weight:750}.note{font-size:.88rem;color:#5d6b7d;line-height:1.5;margin-top:18px}.error{color:#a32626}footer{margin-top:20px;color:#637083;font-size:.8rem}
+</style>
+</head>
+<body><main class="panel">
+<h1>ACL Injury Risk Calculator</h1>
+Enter your scores to obtain your individual regression model based estimate of the ACL injury risk.
+<br><br>
+<b>Training Intensity</b> is your average intensity of training sessions on a scale of 1 (low) to 10 (high).
+<br><br>
+<b>Fatigue Score</b> is your subjective fatigue level on a scale of 1 (low) to 10 (high).
+<br><br>
+<b>Load Balance Score</b> is a calculated score (0–100) indicating the balance between training load and recovery. A higher score reflects a better balance.
+<br><br>
+The original scores shown are the estimated population medians. Replace them with your individual scores
+and press "Calculate". You can also choose a different confidence level.
+<form id="form">
+<label for="intensity">Training Intensity</label><input id="intensity" type="number" step="any" value="5" required>
+<label for="fatigue">Fatigue Score</label><input id="fatigue" type="number" step="any" value="5" required>
+<label for="balance">Load Balance Score</label><input id="balance" type="number" step="any" value="98" required>
+<label for="confidence">Confidence Level (%)</label><input id="confidence" type="number" min="50" max="99.9" step="any" value="95" required>
+<button type="submit">Calculate</button>
+</form>
+<section class="result" aria-live="polite"><h2>Model prediction</h2><div id="value" class="value">Enter scores and select Calculate</div><div id="detail">Prediction uses the fitted linear regression model.</div></section>
+<p class="note">This tool is not a precise medical diagnosis, a validated clinical risk assessment, or a substitute for 
+professional medical advice. Do not use it alone to make return-to-play decisions.</p>
+<footer>No scores are sent to a server by this page.</footer>
+</main>
+<script>
+// Fitted lm model, based on the supplied R output.
+const MODEL = {
+  intercept: 110.314909,
+  trainingIntensity: 2.570421,
+  fatigueScore: 4.413430,
+  loadBalanceScore: -1.056598,
+  residualSD: 8.854906,
+  df: 196,
+  // Covariance matrix from vcov(ACL.Risk), in the order below.
+  covariance: [
+    [52.9071106, -0.4176860517, -0.493627625, -0.5134549886],
+    [-0.4176860517, 0.0632723700, 0.0006327270, 0.0009804335],
+    [-0.493627625, 0.0006327270, 0.0608803740, 0.0020436438],
+    [-0.5134549886, 0.0009804335, 0.0020436438, 0.0053364222]
+  ]
+};
+// Inverse standard-normal CDF (Acklam approximation).
+function normalQuantile(p) {
+  const a=[-39.69683028665376,220.9460984245205,-275.9285104469687,138.3577518672690,-30.66479806614716,2.506628277459239];
+  const b=[-54.47609879822406,161.5858368580409,-155.6989798598866,66.80131188771972,-13.28068155288572];
+  const c=[-0.007784894002430293,-0.3223964580411365,-2.400758277161838,-2.549732539343734,4.374664141464968,2.938163982698783];
+  const d=[0.007784695709041462,0.3224671290700398,2.445134137142996,3.754408661907416];
+  if (p < 0.02425) {
+    const q=Math.sqrt(-2*Math.log(p));
+    return (((((c[0]*q+c[1])*q+c[2])*q+c[3])*q+c[4])*q+c[5]) / ((((d[0]*q+d[1])*q+d[2])*q+d[3])*q+1);
+  }
+  if (p > 0.97575) return -normalQuantile(1-p);
+  const q=p-0.5, r=q*q;
+  return (((((a[0]*r+a[1])*r+a[2])*r+a[3])*r+a[4])*r+a[5])*q /
+    (((((b[0]*r+b[1])*r+b[2])*r+b[3])*r+b[4])*r+1);
+}
+// Student-t quantile expansion; highly accurate for this model's 196 d.f.
+function tCritical(confidencePercent, df) {
+  const z=normalQuantile((1+confidencePercent/100)/2);
+  const z2=z*z, z3=z2*z, z5=z3*z2, z7=z5*z2;
+  return z+(z3+z)/(4*df)+(5*z5+16*z3+3*z)/(96*df**2)
+    +(3*z7+19*z5+17*z3-15*z)/(384*df**3);
+}
+const form = document.getElementById('form');
+const value = document.getElementById('value');
+const detail = document.getElementById('detail');
+form.addEventListener('submit', event => {
+  event.preventDefault();
+  const x = [Number(document.getElementById('intensity').value), Number(document.getElementById('fatigue').value), Number(document.getElementById('balance').value)];
+  if (!x.every(Number.isFinite)) { value.textContent='Invalid input'; detail.textContent='Please enter valid numbers.'; return; }
+  const confidence = Number(document.getElementById('confidence').value);
+  if (!Number.isFinite(confidence) || confidence < 50 || confidence > 99.9) { value.textContent='Invalid confidence level'; detail.textContent='Please enter a confidence level between 50 and 99.9%.'; return; }
+  const predictors = [1, ...x];
+  const coefficients = [MODEL.intercept, MODEL.trainingIntensity, MODEL.fatigueScore, MODEL.loadBalanceScore];
+  const prediction = predictors.reduce((sum, xi, i) => sum + xi * coefficients[i], 0);
+  let meanVariance = 0;
+  for (let i = 0; i < predictors.length; i++) {
+    for (let j = 0; j < predictors.length; j++) {
+      meanVariance += predictors[i] * MODEL.covariance[i][j] * predictors[j];
+    }
+  }
+  const t = tCritical(confidence, MODEL.df);
+  const meanMargin = t * Math.sqrt(Math.max(0, meanVariance));
+  const predictionSE = Math.sqrt(MODEL.residualSD ** 2 + Math.max(0, meanVariance));
+  const margin = t * predictionSE;
+  value.textContent = prediction.toFixed(2);
+  detail.innerHTML = '';
+  const meanLine = document.createElement('p');
+  meanLine.textContent = `${confidence}% confidence interval for the expected ACL injury risk score, given the entered variables: ${(prediction - meanMargin).toFixed(2)} to ${(prediction + meanMargin).toFixed(2)}.`;
+  const individualLine = document.createElement('p');
+  individualLine.textContent = `${confidence}% prediction interval for the individual ACL injury risk score, given the entered variables: ${(prediction - margin).toFixed(2)} to ${(prediction + margin).toFixed(2)}.`;
+  const explanation = document.createElement('p');
+  explanation.textContent = 'How to read the result: ACL Risk Score is a predicted risk score (0–100) for ACL injuries. A higher score indicates a greater risk of injury. The score is based on a fitted regression model.';
+  detail.append(meanLine, individualLine, explanation);
+});
+</script></body></html>
